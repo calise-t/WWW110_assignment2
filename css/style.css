@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+body {
+	margin: 0;
+	background: #eee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #353535;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 0.5em 0.75em;
+	border: 0;
+	border-radius: 0.25em;
+	font-size: 1.25rem;
+	font-family: inherit;
+	font-weight: 400;
+	color: #353535;
+}
+
+input[type=radio] {
+	display: inline-block;
+}
+
+input[type=submit],
+input[type=reset] {
+	display: inline-block;
+	margin: 0 1rem 0 0;
+	padding: 0.75em;
+	background-color: #ccc;
+	border: 0;
+	border-radius: 0.25em;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #353535;
+}
+
+legend {
+	display: block;
+	font-size: 1rem;
+	margin: 0 0 1rem;
+}
+
+label {
+	display: inline-block;
+	font-size: 1rem;
+	margin: 0 0 1rem;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.container-fixed {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.input-row {
+	margin: 0 0 1rem;
+}
+
+@media screen and (min-width: 20rem) {
+	.container-fixed {
+		max-width: 20rem;
+	}
+}
+
+@media screen and (min-width: 40rem) {
+	.container-fixed {
+		max-width: 40rem;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	.container-fixed {
+		max-width: 60rem;
+	}
+}
+
+@media screen and (min-width: 70rem) {
+	.container-fixed {
+		max-width: 70rem;
+	}
+}
+
+/* NEW CSS ADDED */
+
+footer{
+	text-align: center;
+}
+
+.card-container{
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	
+}
+
+.card{
+	border: 5px solid black;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+header{
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-around;
+}
+
+.restart-text{
+	text-align: right;
+}
