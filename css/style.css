@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
+	font-family: "Bangers", system-ui;
 }
 
 html {
@@ -11,7 +13,7 @@ body {
 	margin: 0;
 	background: #eee;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 	color: #353535;
 }
@@ -110,6 +112,7 @@ fieldset {
 
 footer{
 	text-align: center;
+	padding: 2%;
 }
 
 .card-container{
@@ -125,6 +128,22 @@ footer{
 	text-align: center;
 }
 
+.card:nth-child(1){
+	background-color: Crimson;
+	color: #eee;
+}
+
+.card:nth-child(2){
+	background-color: Navy;
+	color: #eee;
+}
+
+.card:nth-child(3){
+	background-color: Black;
+	color: #eee;
+}
+
+
 header{
 	display: flex;
 	padding-top: 50px;
@@ -133,4 +152,33 @@ header{
 
 .restart-text{
 	text-align: right;
+	color: DimGray;
+}
+
+.restart-text a{
+	color: #353535;
+}
+
+.restart-text a:hover{
+	color: #353535;
+}
+
+.step-two-img{
+	border: 10px double black;
+	background-color: Snow;
+	border-radius: 10px;
+}
+
+input[type=submit]{
+	background-color: green;
+	color: #eee;
+}
+
+input[type=reset]{
+	background-color: crimson;
+	color: #eee;
+}
+
+.warning-msg p{
+	color: Crimson;
 }

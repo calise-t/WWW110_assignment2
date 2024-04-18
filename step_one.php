@@ -11,9 +11,9 @@ require('includes/header.inc.php');
 				// This if statement states: if "errors" is set in the url ()
 				if (isset($_GET['errors'])) { 
 					// Display a warning message: 
-					echo '<div class="input-row">';
+					echo '<div class="input-row warning-msg">';
 					echo '<p>Sorry, we can\'t turn you into a crime-fighting sidekick without all of the information. Try again!</p>';
-					echo 'Also, make sure your bio is under 64 characters for the best experience!"';
+					echo '<p> Also, make sure your bio is under 64 characters for the best experience!</p>';
 					echo '</div>';
 				}
 				?>

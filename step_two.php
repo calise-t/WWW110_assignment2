@@ -35,7 +35,7 @@ if ($_POST['user_name'] == "" || $_POST['user_bio'] == "" || strlen($_POST['user
 
 
 <!-- Display a personalized message -->
-<h2>Welcome, <?php echo "$username";?></h2>
+<h2>Welcome, <?php echo "$username";?>!</h2>
 <p>Thank you for volunteering as a Sidekick for The League of Heroes. We're excited to have you on board with us and it seems like you and <?php echo "$favourite_hero";?> are ready for some new adventures! </p>
 
 <?php
@@ -105,7 +105,7 @@ $nemesis_name_list = [
 $nemesis_img_list = [
     "img/nemesis_1.png",
     "img/nemesis_2.png",
-    "img/nemesis_3.jpg"
+    "img/nemesis_3.png"
 ];
 $nemesis_bio_list = [
     "I'm not the one who's hurting Morty. I'm just the one who's making sure you stay hurt.",
@@ -128,25 +128,23 @@ $nemesis_bio = $nemesis_bio_list[$random_number];
         <div class="card">
             <!-- Display a ‘sidekick’ card with username ($username) and bio ($bio) from stop_one.php -->
             <!-- NOTE : strtoupper($string) - turns a string uppercase, uppercase name feels more hero-ish -->
+            <!-- sidenote: Google font ended up chaging all letters to uppercase -->
             <h2>SIDEKICK - <?php echo strtoupper($username);?></h2>
-            <img src="img/tom-from-accounting.png" alt="Sidekick">
-            <hr>
+            <img src="img/tom-from-accounting.png" alt="Sidekick" class="step-two-img" >
             <p><?php echo "$bio";?></p>
         </div>
 
         <!-- Display a ‘superhero’ card with each hero's name ($favourite_hero), image ($fav_hero_img) and bio ($fav_hero_bio)-->
         <div class="card">
             <h2>FAVOURITE HERO - <?php echo strtoupper($favourite_hero);?></h2>
-            <img src="<?php echo "$fav_hero_img";?>" alt="Favourite hero">
-            <hr>
+            <img src="<?php echo "$fav_hero_img";?>" alt="Favourite hero" class="step-two-img" >
             <?php echo "<p>$fav_hero_bio</p>";?>
         </div>
 
         <!-- Display a ‘nemesis’ card with each nemesis's name ($nemesis_name), image ($nemesis_img), bio (#nemesis_bio).  -->
         <div class="card">
             <h2>NEMESIS - <?php echo strtoupper($nemesis_name);?></h2>
-            <img src="<?php echo "$nemesis_img";?>" alt="Nemesis">
-            <hr>
+            <img src="<?php echo "$nemesis_img";?>" alt="Nemesis" class="step-two-img" >
             <?php echo "<p>$nemesis_bio</p>";?>
         </div>
 </div>
